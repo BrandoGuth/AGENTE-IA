@@ -1,2 +1,14 @@
-# AGENTE-IA
-Un Agente de WhatsApp local con dashboard en Next.js que conecta un número real usando Baileys (sin API oficial) y responde vía OpenRouter.
+# Agente WhatsApp (Local)
+
+Agente automatizado que vincula un número de WhatsApp real (vía Baileys/WhatsApp Web) con modelos de lenguaje de OpenRouter, gestionado desde un panel local en Next.js con soporte híbrido (IA / Humano).
+
+## Requisitos
+- Node.js 20+ (Recomendado v22)
+- Cuenta y API Key en [OpenRouter](https://openrouter.ai)
+- Dispositivo con WhatsApp activo para escaneo QR
+
+## Instalación y Configuración
+
+1. Instalar dependencias:
+   ```bash
+   npm install
