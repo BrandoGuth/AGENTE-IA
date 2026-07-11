@@ -1,0 +1,19 @@
+# dependencias
+/node_modules
+
+# Next.js
+/.next
+/out
+
+# runtime local
+/data
+/auth
+
+# env
+.env
+.env.local
+
+# logs / OS
+*.log
+.DS_Store
+Thumbs.db

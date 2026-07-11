@@ -1,0 +1,41 @@
+{
+  "name": "agente-whatsapp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Agente de WhatsApp local con Baileys + LLM y dashboard Next.js",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "start:bot": "tsx scripts/start-bot.ts",
+    "start:all": "concurrently --kill-others --names BOT,WEB --prefix-colors yellow,cyan \"npm run start:bot\" \"npm run start\""
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.0",
+    "better-sqlite3": "^12.11.1",
+    "concurrently": "^9.0.0",
+    "next": "^16.0.0",
+    "openai": "^4.0.0",
+    "pino": "^9.0.0",
+    "qrcode": "^1.5.0",
+    "qrcode-terminal": "^0.12.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tsx": "^4.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.0",
+    "@types/better-sqlite3": "^7.6.0",
+    "@types/node": "^22.0.0",
+    "@types/qrcode": "^1.5.0",
+    "@types/qrcode-terminal": "^0.12.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.6.0"
+  }
+}
